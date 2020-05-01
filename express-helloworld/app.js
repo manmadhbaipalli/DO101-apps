@@ -1,9 +1,10 @@
 var express = require('express');
 const TEST = process.env.TEST;
+const TEST1 = process.env.TEST1;
 app = express();
 
 app.get('/', function (req, res) {
-  res.send('Hello World!\n' +TEST);
+  res.send('Hello World!\n' +TEST +"TEST1:" + TEST1);
 });
 
 app.get('/manmadh', function (req, res) {
